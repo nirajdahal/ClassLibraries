@@ -1,0 +1,16 @@
+﻿i> Class Libraries
+
+- Class Library helps us to manage code properly
+- We cannot add refernce of consoleUI to class libraries beacuse it creates circular dependency
+
+	ie: At first when the app is built it goes to ConsoleUI and look for libraries reference.
+	Then it starts setting up the refernced library code. If it finds reference to ConsoleUI in that refernced library 
+	it again goes to back to ConsoleUI . But the ConsoleUI has also refernce to library so it creats circular dependency.
+
+- When we build our project the class library gets converted into dll files
+- Class libraries cannot run on its own.
+- Microsoft has so many dll files where it uses in various places.
+- When we install .net in our computer we have access to various dll. Some of them are:
+	System,System.core,System.Data
+
+*Pro Tip: Store As much of your code in class library as possible. Dont put ConsoleUI in class libraries
