@@ -9,7 +9,7 @@ namespace ConsoleUI
         {
             PersonModel person = new PersonModel();
            
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
